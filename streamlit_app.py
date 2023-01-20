@@ -21,3 +21,7 @@ fruit_to_show = my_fruit_list.loc[fruit_selected]
 #DD Display output from SS
 streamlit.dataframe(fruit_to_show)
 
+#Lesson 9 
+import request
+fruityvice_response = request.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice.response)
